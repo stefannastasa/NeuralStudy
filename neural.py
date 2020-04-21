@@ -22,7 +22,6 @@ class NeuralNetwork:
         self.layer1 = sigmoid(np.dot(self.input, self.weights1))
         self.output = sigmoid(np.dot(self.layer1, self.weights2))
 
-
     def backprop(self):
         matr = 2*(self.y-self.output) * sigmoid_derivative(self.output)
         abc = np.dot(matr, self.weights2.T)
