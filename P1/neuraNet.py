@@ -127,8 +127,8 @@ class neuralNetwork:
 if __name__ == "__main__":
     
     training_data, test_data= tf.keras.datasets.mnist.load_data()
-    net = neuralNetwork([784,100,10])
-    net.SGD(training_data, 30, 10, 0.1, test_data=test_data)
+    net = neuralNetwork([784,16,10])
+    net.SGD(training_data, 30, 10, 0.5, test_data=test_data)
             
                         
 
